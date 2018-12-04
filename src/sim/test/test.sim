@@ -1,0 +1,58 @@
+let x = 5 - 9
+
+if (x > 1) {
+  println(true)
+} else {
+  if (x == -4) {
+  	println("This is false!")
+  } else {
+  	println("Wait, what?")
+  }
+}
+
+let loop = fn(x, y, z) {
+  if (x < (x + y) - 1) {
+    let y = y - 1
+    let x = x + 1;
+    let z = z + z * x
+    println(x)
+    println(z)
+    loop(x, y, z)
+  } else {
+    println(y + x)
+    return "END"
+  }
+};
+
+loop(0, 7, 1)
+
+let arr = [1, 2, 3, 4, 5];
+let map = {"name": "Harthoric", "age": 15, "height": "1.8m", "weight": "66kg"};
+
+println("My name is " + map["name"])
+
+println(last(arr))
+println(first(arr))
+
+
+println(len(arr))
+
+let myLast = fn(a) {
+  return a[len(a)-1]
+}
+
+println(myLast([6,53,2,3,56678,54]))
+
+println(arr[0])
+
+println("With the ability to power, comes the ability to root!", 5 ** 3, 5 ** (1.0/3.0))
+
+c(5, 2)
+
+let c = fn(x, y) {
+  return x + y
+}
+
+println(c(4, 1))
+
+c(5, 2)
